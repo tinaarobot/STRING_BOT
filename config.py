@@ -3,11 +3,20 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+#❖________①_______❖_______#
+API_ID = int(getenv("API_ID", None))
 
-BOT_TOKEN = getenv("BOT_TOKEN")
-OWNER_ID = int(getenv("OWNER_ID"))
+#❖________②_______❖_______#
+API_HASH = getenv("API_HASH", None)
 
-MONGO_DB_URI = getenv("MONGO_DB_URI")
+#❖________③_______❖_______#
+BOT_TOKEN = getenv("BOT_TOKEN", None)
+
+#❖________④_______❖_______#
+OWNER_ID = int(getenv("OWNER_ID", None))
+
+#❖________⑤_______❖_______#
+MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+
+#❖________⑥_______❖_______#
 MUST_JOIN = getenv("MUST_JOIN", None)
